@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen Art Gallery</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jujutsu Kaisen Gallery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured-artwork">Featured Artwork</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#character-gallery">Character Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#battle-scenes">Battle Scenes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cursed-techniques">Cursed Techniques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fan-submissions">Fan Submissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-white">
+                    <h1 class="display-4 fw-bold mb-3">Jujutsu Kaisen Art Gallery</h1>
+                    <p class="lead mb-4">Explore the stunning artwork from Gege Akutami's hit manga series</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Browse Gallery</button>
+                        <button type="button" class="btn btn-outline-light btn-lg px-4">Submit Artwork</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Artwork Section (Carousel) -->
+    <section id="featured-artwork" class="showcase-section">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 section-title">Featured Artwork</h2>
+
+            <!-- Bootstrap Carousel -->
+            <div id="featuredCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="featured-panel">
+                            <img src="./img/913447-final.jpg" class="d-block w-100" alt="Gojo vs Sukuna">
+                            <div class="carousel-caption">
+                                <h3>Gojo vs Sukuna</h3>
+                                <p>The iconic battle scene from the Shinjuku Showdown arc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="featured-panel">
+                            <img src="./img/thumb-1920-1141570.png" class="d-block w-100" alt="Hollow purple">
+                            <div class="carousel-caption">
+                                <h3>Hollow purple</h3>
+                                <p>Gojo's strongest atk, the Hollow purple.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="featured-panel">
+                            <img src="./img/wp14406238.png" class="d-block w-100" alt="Black Flash">
+                            <div class="carousel-caption">
+                                <h3>Black Flash</h3>
+                                <p>Yuji performing the powerful Black Flash technique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="featured-panel">
+                            <img src="./img/thumb-1920-1341239.jpg" class="d-block w-100" alt="Malevolent Shrine">
+                            <div class="carousel-caption">
+                                <h3>Malevolent Shrine</h3>
+                                <p>Sukuna's domain expansion, the Malevolent Shrine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="featured-panel">
+                            <img src="./img/Tokyo_Metropolitan_Jujutsu_Technical_School_28Anime29 (1).png"
+                                class="d-block w-100" alt="Jujutsu High">
+                            <div class="carousel-caption">
+                                <h3>Tokyo Jujutsu High</h3>
+                                <p>The school where sorcerers are trained to fight curses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Gallery Section -->
+    <section id="character-gallery" class="showcase-section bg-dark">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 section-title">Character Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/914004-final.gif" class="card-img-top" alt="Satoru Gojo">
+                        <div class="card-body">
+                            <h5 class="card-title">Satoru Gojo</h5>
+                            <p class="card-text">The most powerful jujutsu sorcerer and a teacher at Tokyo Jujutsu High
+                                School.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/222904.gif" class="card-img-top" alt="Yuji Itadori">
+                        <div class="card-body">
+                            <h5 class="card-title">Yuji Itadori</h5>
+                            <p class="card-text">The main protagonist who becomes the vessel for the King of Curses,
+                                Sukuna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/220156.gif" class="card-img-top" alt="Megumi Fushiguro">
+                        <div class="card-body">
+                            <h5 class="card-title">Megumi Fushiguro</h5>
+                            <p class="card-text">A stoic and talented sorcerer who uses the Ten Shadows Technique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/thumb-1920-279734.png" class="card-img-top" alt="Nobara Kugisaki">
+                        <div class="card-body">
+                            <h5 class="card-title">Nobara Kugisaki</h5>
+                            <p class="card-text">A strong-willed jujutsu sorcerer who uses Straw Doll Technique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/219645.gif" class="card-img-top" alt="Ryomen Sukuna">
+                        <div class="card-body">
+                            <h5 class="card-title">Ryomen Sukuna</h5>
+                            <p class="card-text">The King of Curses, an ancient sorcerer known as the strongest curse.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/thumb-1920-1241106.jpg" class="card-img-top" alt="Toge Inumaki">
+                        <div class="card-body">
+                            <h5 class="card-title">Toge Inumaki</h5>
+                            <p class="card-text">A sorcerer who uses Cursed Speech as his technique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Battle Scenes Section -->
+    <section id="battle-scenes" class="showcase-section bg-dark">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 section-title">Epic Battle Scenes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/thumb-1920-1335141.png" class="card-img-top" alt="Shibuya Incident">
+                        <div class="card-body">
+                            <h5 class="card-title">Shibuya Incident</h5>
+                            <p class="card-text">The chaotic battle that took place in Shibuya on October 31st.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/thumb-1920-1134377.png" class="card-img-top" alt="Kyoto Goodwill Event">
+                        <div class="card-body">
+                            <h5 class="card-title">Kyoto Goodwill Event</h5>
+                            <p class="card-text">The exchange event between Tokyo and Kyoto Jujutsu High that turned
+                                into a battlefield.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/thumb-1920-1266426.jpg" class="card-img-top" alt="Culling Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Culling Game</h5>
+                            <p class="card-text">The deadly tournament created by Kenjaku that forces sorcerers to fight
+                                to the death.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursed Techniques Section -->
+    <section id="cursed-techniques" class="showcase-section">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 section-title">Cursed Techniques</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/220764.gif" class="card-img-top" alt="Limitless">
+                        <div class="card-body">
+                            <h5 class="card-title">Limitless</h5>
+                            <p class="card-text">Gojo's technique that allows him to manipulate space at the atomic
+                                level.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/219719.gif" class="card-img-top" alt="Ten Shadows">
+                        <div class="card-body">
+                            <h5 class="card-title">Ten Shadows</h5>
+                            <p class="card-text">Megumi's technique that allows him to summon and control various
+                                shikigami.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/211830.gif" class="card-img-top" alt="Straw Doll">
+                        <div class="card-body">
+                            <h5 class="card-title">Straw Doll</h5>
+                            <p class="card-text">Nobara's technique that allows her to inflict damage using a straw doll
+                                and nails.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Submissions Section -->
+    <section id="fan-submissions" class="showcase-section">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 section-title">Fan Submissions</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/222675.gif" class="card-img-top" alt="Fan Art 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Gojo Unleashed</h5>
+                            <p class="card-text">Fan art by @mangafan depicting Gojo removing his blindfold.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/219645D.gif" class="card-img-top" alt="Fan Art 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Sukuna's Dominance</h5>
+                            <p class="card-text">A stunning rendition of Sukuna's true form by @artlover99.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card panel-card">
+                        <img src="./img/thumb-1920-1386653.jpg" class="card-img-top" alt="Fan Art 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo Squad</h5>
+                            <p class="card-text">An epic scene reimagined by @jjkfan showing the main trio in battle
+                                stance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-primary">Submit Your Artwork</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="showcase-section bg-dark">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 section-title">About Jujutsu Kaisen</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="about-text">Jujutsu Kaisen is a Japanese manga series written and illustrated by Gege
+                        Akutami. It has been serialized in Shueisha's Weekly Shōnen Jump since March 2018.</p>
+                    <p class="about-text">The story follows Yuji Itadori, a high school student who joins a secret
+                        organization of Jujutsu Sorcerers to eliminate a powerful Curse named Ryomen Sukuna, of whom
+                        Yuji becomes the host. Jujutsu Kaisen is set in a world where Curses are created from negative
+                        human emotions, and it explores themes of life and death through its characters' battles against
+                        these supernatural forces.</p>
+                    <p class="about-text">This gallery is dedicated to showcasing the stunning artwork from both the
+                        manga and anime, as well as fan creations inspired by the series.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">
+                    <p class="text-white mb-0">© 2025 Jujutsu Kaisen Art Gallery</p>
+                </div>
+                <div class="col-lg-4 text-lg-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitter fa-2x text-white"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f fa-2x text-white"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-instagram fa-2x text-white"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="text-decoration-none text-white me-3" href="#">Privacy Policy</a>
+                    <a class="text-decoration-none text-white" href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
